@@ -12,6 +12,7 @@
   --accent-color: #2294ed;
   --accent-color-dark: #1d69a3;
   --padding-inline-section: 20px;
+  --font-family: "Roboto", sans-serif;
 }
 h1 {
   font-size: 3rem;
@@ -37,17 +38,41 @@ a {
   background-image: url("assets/asset\ 32.png");
   background-color: #4fb3d4;
   background-size: 300px;
-  .navbar {
-    display: flex;
-    justify-content: space-around;
-  }
-  .left {
-    display: flex;
-    flex: auto;
-  }
-  .right ul {
-    display: flex;
-    justify-content: space-around;
-    flex-grow: 3;
-  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--font-family);
+  margin-top: 1%;
+}
+.left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.right ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+button {
+  padding: 4px;
+  border-radius: 5px;
+}
+.secondary {
+  background-color: var(--accent-color);
+  transition: 0.2s ease-in;
+}
+.secondary:hover {
+  background-color: aquamarine;
+}
+.primary {
+  color: var(--accent-color);
+  border: 0.5 solid var(--secondary--text-color);
+  transition: 0.2 ease-out;
+}
+.primary:hover {
+  color: var(--secondary--text-color);
 }
